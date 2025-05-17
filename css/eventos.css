@@ -1,0 +1,114 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f7f7f7;
+}
+
+h1, h2 {
+  font-family: 'Playfair Display', serif;
+}
+
+:root {
+  --primary-color: #c8102e;
+  --secondary-color: #ffffff;
+  --text-color: #333;
+  --accent-color: #fcd303;
+}
+
+/* Navbar */
+.navbar {
+  background-color: var(--primary-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  color: var(--secondary-color);
+}
+
+.navbar .logo {
+  font-size: 1.5rem;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-links a {
+  color: var(--secondary-color);
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+}
+
+.nav-links a:hover {
+  background-color: var(--accent-color);
+  color: #000;
+  border-radius: 5px;
+}
+
+/* Hero */
+.hero-eventos {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+/* Eventos */
+.eventos {
+  padding: 2rem 1rem;
+  background-color: #fff;
+}
+
+.eventos-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.eventos-container h2 {
+  text-align: center;
+  color: var(--primary-color);
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.event-card {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #f9f9f9;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.event-card img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  object-fit: cover;
+}
+
+.event-card .info {
+  padding: 1rem;
+  flex: 1;
+}
+
+.event-card h3 {
+  margin-top: 0;
+  color: var(--primary-color);
+}
+
+.event-card p {
+  color: #555;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}

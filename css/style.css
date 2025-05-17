@@ -1,0 +1,259 @@
+/* Tipografias */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f7f7f7;
+}
+
+h1, h2 {
+  font-family: 'Playfair Display', serif;
+}
+
+/* Paleta de colores */
+:root {
+  --primary-color: #c8102e; /* Rojo Siman */
+  --secondary-color: #ffffff;
+  --text-color: #333;
+  --accent-color: #fcd303;
+}
+
+/* Navegacion */
+.navbar {
+  background-color: var(--primary-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  color: var(--secondary-color);
+}
+
+.navbar .logo {
+  font-size: 1.5rem;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-links a {
+  color: var(--secondary-color);
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+}
+
+.nav-links a:hover {
+  background-color: var(--accent-color);
+  color: #000;
+  border-radius: 5px;
+}
+
+/* Hero Section */
+.hero {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  background-color: var(--accent-color);
+  color: #000;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Banner */
+.banner-img {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+.banner-img img {
+  max-width: 90%;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* Seccion promociones */
+.promos {
+  background-color: #fff;
+  padding: 2rem 1rem;
+}
+
+.promo-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.promo-container h2 {
+  color: var(--primary-color);
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.promo-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+/* Tarjetas */
+.card {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  width: 280px;
+  padding: 1rem;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.card h3 {
+  margin: 0.8rem 0 0.5rem;
+  font-size: 1.2rem;
+}
+
+.card p {
+  color: #555;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+
+/* Seccion hero de eventos */
+.hero-eventos {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+/* Eventos */
+.eventos {
+  padding: 2rem 1rem;
+  background-color: #fff;
+}
+
+.eventos-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.eventos-container h2 {
+  text-align: center;
+  color: var(--primary-color);
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.event-card {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #f9f9f9;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.event-card img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  object-fit: cover;
+}
+
+.event-card .info {
+  padding: 1rem;
+  flex: 1;
+}
+
+.event-card h3 {
+  margin-top: 0;
+  color: var(--primary-color);
+}
+
+.event-card p {
+  color: #555;
+}
+
+
+/* Hero Suscripcion */
+.hero-suscripcion {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+/* Formulario */
+.form-section {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 1rem;
+  background-color: #fff;
+}
+
+.formulario {
+  background-color: #f9f9f9;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.formulario label {
+  font-weight: bold;
+  color: var(--text-color);
+}
+
+.formulario input {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.formulario button {
+  padding: 0.75rem;
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.formulario button:hover {
+  background-color: #a10d24;
+}
